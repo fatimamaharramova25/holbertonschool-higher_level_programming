@@ -11,7 +11,10 @@ def roman_to_int(roman_string):
     num = 0
     for i in range(len(roman_string)):
         current = rd.get(roman_string[i], 0)
-        next_v = rd.get(roman_string[i + 1], 0) if i + 1 < len(roman_string)             else 0
+        next_v = 0
+        if i + 1 < len(roman_string):
+            next_v = rd.get(roman_string[i + 1], 0)
+
         if next_v > current:
             num -= current
         else:
