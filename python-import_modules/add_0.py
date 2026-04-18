@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def add(a, b):
-    """Mənim toplama funksiyam"""
+    """My addition function"""
     return (a + b)
