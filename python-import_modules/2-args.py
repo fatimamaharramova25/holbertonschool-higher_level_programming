@@ -2,7 +2,7 @@
 import sys
 
 if __name__ == "__main__":
-    argv = sys.argv[1:]  # Proqramın adını çıxırıq, bizə ancaq arqumentlər lazımdır
+    argv = sys.argv[1:]
     count = len(argv)
 
     if count == 0:
